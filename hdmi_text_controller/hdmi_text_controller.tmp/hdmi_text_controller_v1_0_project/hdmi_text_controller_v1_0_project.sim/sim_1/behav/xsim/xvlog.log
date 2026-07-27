@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
