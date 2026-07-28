@@ -34,10 +34,20 @@ module hdmi_text_controller_v1_0_AXI #
     // Width of S_AXI data bus
     parameter integer C_S_AXI_DATA_WIDTH	= 32,
     // Width of S_AXI address bus
-    parameter integer C_S_AXI_ADDR_WIDTH	= 4
+    parameter integer C_S_AXI_ADDR_WIDTH	= 12
 )
 (
     // Users to add ports here
+    input [9:0] logic   DrawX,
+    input [9:0] logic   DrawY,
+    input logic         vs,
+
+    input [2:0] logic   fbd_r,
+    input [2:0] logic   fbd_g,
+    input [2:0] logic   fbd_b,
+    input [2:0] logic   bkg_r,
+    input [2:0] logic   bkg_g,
+    input [2:0] logic   bkg_b,
 
     // User ports ends
 
@@ -100,7 +110,11 @@ module hdmi_text_controller_v1_0_AXI #
     output logic  S_AXI_RVALID,
     // Read ready. This signal indicates that the master can
         // accept the read data and response information.
-    input logic  S_AXI_RREADY
+    input logic  S_AXI_RREADY, 
+    
+    //TEST
+    
+    output logic [31:0] fooreg[604]
 );
 
 // AXI4LITE signals
@@ -121,7 +135,7 @@ logic  	axi_rvalid;
 // ADDR_LSB = 2 for 32 bits (n downto 2)
 // ADDR_LSB = 3 for 64 bits (n downto 3)
 localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
-localparam integer OPT_MEM_ADDR_BITS = 1;
+localparam integer OPT_MEM_ADDR_BITS = 9;
 //----------------------------------------------
 //-- Signals for user logic register space example
 //------------------------------------------------
@@ -134,7 +148,7 @@ localparam integer OPT_MEM_ADDR_BITS = 1;
 //Note: the provided Verilog template had the registered declared as above, but in order to give 
 //students a hint we have replaced the 4 individual registers with an unpacked array of packed logic. 
 //Note that you as the student will still need to extend this to the full register set needed for the lab.
-logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[4];
+logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[604];
 logic	 slv_reg_rden;
 logic	 slv_reg_wren;
 logic [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
@@ -389,8 +403,27 @@ begin
 end    
 
 // Add user logic here
+assign slv_regs[600][27:24] = fgd_r;
+assign slv_regs[600][23:20] = fgd_g;
+assign slv_regs[600][19:16] = fgd_b;
 
+assign slv_regs[600][11:8] = bkg_r;
+assign slv_regs[600][7:4] = bkg_g;
+assign slv_regs[600][3:0] = bkg_b;
+
+
+always_ff @ (negedge vsync)
+begin
+    slv_regs[601] += 1;
+end
+
+assign slv_reg[602] = DrawX;
+assign slv_reg[603] = DrawY;    
+
+
+
+
+assign fooreg = slv_regs;
 // User logic ends
 
 endmodule
-

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1E7B0616DBB59AC4",
+      "boundary_crc": "0x1E7B06161D73E184",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller",
       "name": "hdmi_text_controller",

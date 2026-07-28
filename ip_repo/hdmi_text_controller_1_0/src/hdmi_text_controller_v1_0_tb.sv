@@ -55,6 +55,7 @@ module hdmi_text_controller_tb();
     logic [9:0] drawX, drawY;
     logic [31:0] tb_read;
     
+    
     //BMP writer related signals    
     localparam BMP_WIDTH  = 800;
     localparam BMP_HEIGHT = 525;
@@ -66,7 +67,13 @@ module hdmi_text_controller_tb();
     
     //TEST
     
-    logic [31:0] fooreg [604];
+    //logic [31:0] fooreg [604];
+    logic [9:0] reg_to_read;
+    assign reg_to_read = hdmi_text_controller_v1_0_inst.reg_to_read;
+    logic [31:0] reg_value;
+    assign reg_value = hdmi_text_controller_v1_0_inst.reg_value;
+    logic pixel_val;
+    assign pixel_val = hdmi_text_controller_v1_0_inst.pixel_val;
 
 	//Instantiation of DUT (HDMI TEXT_CONTROLLER) IP
 	hdmi_text_controller_v1_0 # (
@@ -99,9 +106,10 @@ module hdmi_text_controller_tb();
 		.axi_rdata(read_data),
 		.axi_rresp(read_resp),
 		.axi_rvalid(read_data_valid),
-		.axi_rready(read_data_ready),
+		.axi_rready(read_data_ready)
 		//TEST
-		.fooreg(fooreg)
+		//.fooreg(fooreg)
+		
 	);
 	
 	initial begin: CLOCK_INITIALIZATION
@@ -162,6 +170,8 @@ module hdmi_text_controller_tb();
           for (int x=0;x<BMP_WIDTH;x++)
             $fwrite(fout_bmp_pointer,"%c%c%c",bitmap[x][y][23:16],bitmap[x][y][15:8],bitmap[x][y][7:0]) ;
         end
+
+          
     
         $fclose(fout_bmp_pointer);
         end
@@ -177,7 +187,7 @@ module hdmi_text_controller_tb();
         end
         else
             if (pixel_vde) //Only draw when not in the blanking interval, BMP24 is BGR format
-                bitmap[drawX][drawY] <= 24'hFF0000;//{pixel_rgb[2], 4'h0, pixel_rgb[1], 4'h0, pixel_rgb[0], 4'h00};
+                bitmap[drawX][drawY] <= {pixel_rgb[2], 4'h0, pixel_rgb[1], 4'h0, pixel_rgb[0], 4'h00};
 
     // Provided AXI write task, follow this example for AXI read below
     task axi_write (input logic [31:0] addr, input logic [31:0] data);

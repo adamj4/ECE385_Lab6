@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_microblaze_0_2/sim/hdmi_text_controller_microblaze_0_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_dlmb_v10_2/sim/hdmi_text_controller_dlmb_v10_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_ilmb_v10_2/sim/hdmi_text_controller_ilmb_v10_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_dlmb_bram_if_cntlr_2/sim/hdmi_text_controller_dlmb_bram_if_cntlr_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_ilmb_bram_if_cntlr_2/sim/hdmi_text_controller_ilmb_bram_if_cntlr_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_microblaze_0_axi_intc_2/sim/hdmi_text_controller_microblaze_0_axi_intc_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_mdm_1_2/sim/hdmi_text_controller_mdm_1_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_rst_clk_wiz_1_100M_2/sim/hdmi_text_controller_rst_clk_wiz_1_100M_2.vhd" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_axi_uartlite_0_2/sim/hdmi_text_controller_axi_uartlite_0_2.vhd" \
+
+nosort
