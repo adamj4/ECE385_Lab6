@@ -107,12 +107,14 @@
   "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
   "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
 -endlib
+-makelib xcelium_lib/xil_default_lib -sv \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/VGA_controller.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/font_rom.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/VGA_controller.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/font_rom.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0_AXI.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv" \
   "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/sim/hdmi_text_controller_hdmi_text_controller_0_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

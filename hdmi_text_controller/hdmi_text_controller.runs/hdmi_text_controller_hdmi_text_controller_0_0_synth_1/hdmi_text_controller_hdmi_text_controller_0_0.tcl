@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "hdmi_text_controller_hdmi_text_controller_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }

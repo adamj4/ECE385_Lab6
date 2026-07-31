@@ -257,24 +257,23 @@ always_ff @( posedge S_AXI_ACLK )
 begin
   if ( S_AXI_ARESETN == 1'b0 )
     begin
-        for (integer i = 0; i < 600; i++)
+        for (integer i = 0; i < 2**C_S_AXI_ADDR_WIDTH; i++)
         begin
            slv_regs[i] <= 0;
         end
-        
     end
   else begin
     if (slv_reg_wren)
       begin
-        for ( byte_index = 0; byte_index < (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
-          if ( S_AXI_WSTRB[byte_index] == 1) begin
+        for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
+          if ( S_AXI_WSTRB[byte_index] == 1 ) begin
             // Respective byte enables are asserted as per write strobes, note the use of the index part select operator
             // '+:', you will need to understand how this operator works.
             slv_regs[axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]][(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
-          end
+          end  
       end
   end
-end    
+end   
 
 // Implement write response logic generation
 // The write response and response valid signals are asserted by the slave 
@@ -377,7 +376,7 @@ assign slv_reg_rden = axi_arready & S_AXI_ARVALID & ~axi_rvalid;
 always_comb
 begin
       // Address decoding for reading registers
-     case (axi_araddr)
+     case (axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB])
         11'd601: reg_data_out = vsync_counter;
         11'd602: reg_data_out = drawX;
         11'd603: reg_data_out = drawY;
@@ -415,9 +414,12 @@ end
         
                     
             
-        always_ff @ (negedge vs)
+        always_ff @ (negedge vs or posedge S_AXI_ACLK)
         begin
-            vsync_counter += 1;
+            if (S_AXI_ARESETN == 1'b0)
+                vsync_counter <= 1;
+            else if (vs == 1'b0)
+                vsync_counter += 1;
         end
  
 

@@ -10,7 +10,19 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source hdmi_text_controller_hdmi_text_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 999.871 ; gain = 115.570
+
+*** Running vivado
+    with args -log hdmi_text_controller_hdmi_text_controller_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_text_controller_hdmi_text_controller_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source hdmi_text_controller_hdmi_text_controller_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1003.035 ; gain = 118.730
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/RD_hdmi_ip2020'.
@@ -25,26 +37,127 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 50812
+INFO: [Synth 8-7075] Helper process launched with PID 99228
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-11121] redeclaration of ANSI port 'pixel_val' is not allowed [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv:36]
-WARNING: [Synth 8-10180] variable 'col' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv:42]
-WARNING: [Synth 8-10180] variable 'row' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv:43]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'pixel_val' is not allowed [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv:36]
+WARNING: [Synth 8-10180] variable 'col' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv:42]
+WARNING: [Synth 8-10180] variable 'row' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv:43]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:145]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:146]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:147]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:148]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1817.469 ; gain = 407.949
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1818.949 ; gain = 408.070
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_hdmi_text_controller_0_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/synth/hdmi_text_controller_hdmi_text_controller_0_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/VGA_controller.sv:26]
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv:101]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv:101]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:28]
+WARNING: [Synth 8-324] index 604 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 605 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 606 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 607 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 608 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 609 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 610 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 611 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 612 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 613 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 614 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 615 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 616 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 617 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 618 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 619 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 620 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 621 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 622 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 623 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 624 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 625 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 626 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 627 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 628 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 629 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 630 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 631 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 632 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 633 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 634 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 635 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 636 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 637 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 638 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 639 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 640 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 641 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 642 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 643 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 644 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 645 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 646 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 647 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 648 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 649 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 650 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 651 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 652 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 653 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 654 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 655 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 656 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 657 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 658 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 659 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 660 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 661 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 662 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 663 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 664 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 665 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 666 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 667 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 668 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 669 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 670 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 671 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 672 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 673 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 674 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 675 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 676 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 677 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 678 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 679 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 680 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 681 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 682 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 683 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 684 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 685 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 686 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 687 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 688 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 689 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 690 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 691 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 692 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 693 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 694 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 695 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 696 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 697 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 698 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 699 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 700 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 701 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 702 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+WARNING: [Synth 8-324] index 703 out of range [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:262]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv:101]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv:101]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/synth/hdmi_tx_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
 INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/srldelay.v:70]
@@ -77,41 +190,32 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:69]
-INFO: [Synth 8-6157] synthesizing module 'color_mapper' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'font_rom' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/font_rom.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/font_rom.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv:16]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv:10]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_hdmi_text_controller_0_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/synth/hdmi_text_controller_hdmi_text_controller_0_0.sv:53]
 WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:148]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[26] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[25] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WDATA[24] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2344.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.985 . Memory (MB): peak = 2480.617 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -129,22 +233,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_text_controller_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2344.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2480.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.957 . Memory (MB): peak = 2344.320 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.781 . Memory (MB): peak = 2480.617 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:05 ; elapsed = 00:01:22 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Constraint Validation : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:05 ; elapsed = 00:01:22 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -153,10 +257,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz/inst. (constraint fi
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:22 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:39 ; elapsed = 00:02:09 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:40 ; elapsed = 00:01:48 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -182,12 +286,13 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 41    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 609   
-	   4 Input   32 Bit        Muxes := 1     
+	 607 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 604   
+	 607 Input   10 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 6     
 	  22 Input   10 Bit        Muxes := 1     
 	   4 Input   10 Bit        Muxes := 2     
-	   2 Input    8 Bit        Muxes := 1825  
+	   2 Input    8 Bit        Muxes := 2429  
 	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 12    
 	   2 Input    4 Bit        Muxes := 7     
@@ -210,225 +315,47 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7129] Port axi_awprot[2] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_awprot[1] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_awprot[0] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[31] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[30] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[29] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[28] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[27] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[26] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[25] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wdata[24] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_wstrb[3] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_arprot[2] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_arprot[1] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_arprot[0] in module hdmi_text_controller_hdmi_text_controller_0_0 is either unconnected or has no load
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[591][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[590][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[588][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[586][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[582][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[581][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[580][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[579][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[577][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[599][24]' (FDRE) to 'slv_regs_reg[598][24]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[598][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[596][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[593][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[455][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[454][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[451][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[448][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[447][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[180][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[179][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[178][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[177][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[176][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[175][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[171][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[170][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[169][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[168][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[166][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[165][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[162][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[161][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[160][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[158][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[152][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[151][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[144][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[143][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[142][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[141][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[140][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[139][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[137][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[129][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[128][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[125][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[123][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[121][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[120][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[119][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[118][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[117][24]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[591][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[590][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[588][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[586][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[582][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[581][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[580][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[579][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[577][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[599][25]' (FDRE) to 'slv_regs_reg[598][25]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[598][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[596][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[593][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[455][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[454][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[451][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[448][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[447][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[180][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[179][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[178][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[177][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[176][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[175][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[171][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[170][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[169][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[168][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[166][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[165][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[162][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[161][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[160][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[158][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[152][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[151][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[144][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[143][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[142][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[141][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[140][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[139][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[137][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[129][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[128][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[125][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[123][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Synth 8-3886] merging instance 'slv_regs_reg[121][25]' (FDRE) to 'slv_regs_reg[598][26]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[182][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[297][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[296][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[298][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[295][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[294][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[299][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[300][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[423][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[302][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[303][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[304][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[10][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[11][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[11][25] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_regs_reg[503][24] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'axi_rresp_reg[0]' (FDRE) to 'axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\vsync_counter_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\vsync_counter_reg[31] )
+INFO: [Synth 8-3886] merging instance 'axi_bresp_reg[0]' (FDRE) to 'axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:54 ; elapsed = 00:05:00 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:03:37 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -449,19 +376,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:12 ; elapsed = 00:05:24 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:43 ; elapsed = 00:03:51 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:00 ; elapsed = 00:11:32 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Timing Optimization : Time (s): cpu = 00:07:54 ; elapsed = 00:09:18 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:10:14 ; elapsed = 00:15:30 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Technology Mapping : Time (s): cpu = 00:08:21 ; elapsed = 00:10:31 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -479,37 +406,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:10:36 ; elapsed = 00:15:58 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished IO Insertion : Time (s): cpu = 00:08:29 ; elapsed = 00:10:41 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:10:36 ; elapsed = 00:15:58 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:30 ; elapsed = 00:10:41 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:44 ; elapsed = 00:16:09 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:33 ; elapsed = 00:10:44 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:10:44 ; elapsed = 00:16:09 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:33 ; elapsed = 00:10:44 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:11:21 ; elapsed = 00:16:55 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:34 ; elapsed = 00:10:45 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:11:21 ; elapsed = 00:16:55 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:34 ; elapsed = 00:10:45 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -540,54 +467,49 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     3|
-|2     |CARRY4     |    11|
-|3     |LUT1       |     3|
-|4     |LUT2       |    18|
-|5     |LUT3       |  4584|
-|6     |LUT4       |   250|
-|7     |LUT5       |  5515|
-|8     |LUT6       |  6933|
+|2     |CARRY4     |     3|
+|3     |LUT1       |     2|
+|4     |LUT2       |   153|
+|5     |LUT3       |  6398|
+|6     |LUT4       |    73|
+|7     |LUT5       |   623|
+|8     |LUT6       | 10088|
 |9     |MMCME2_ADV |     1|
-|10    |MUXF7      |  4379|
-|11    |MUXF8      |  1694|
+|10    |MUXF7      |  5834|
+|11    |MUXF8      |  2260|
 |12    |OSERDESE2  |     8|
 |14    |SRL16E     |    39|
-|15    |FDCE       |    66|
-|16    |FDRE       | 14845|
+|15    |FDCE       |    68|
+|16    |FDRE       | 19505|
 |17    |FDSE       |     1|
 |18    |IBUF       |     1|
 |19    |OBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:11:21 ; elapsed = 00:16:56 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:34 ; elapsed = 00:10:45 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:10:32 ; elapsed = 00:16:38 . Memory (MB): peak = 2344.320 ; gain = 934.801
-Synthesis Optimization Complete : Time (s): cpu = 00:11:22 ; elapsed = 00:17:00 . Memory (MB): peak = 2344.320 ; gain = 934.801
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:43 ; elapsed = 00:10:29 . Memory (MB): peak = 2480.617 ; gain = 1069.738
+Synthesis Optimization Complete : Time (s): cpu = 00:08:34 ; elapsed = 00:10:46 . Memory (MB): peak = 2480.617 ; gain = 1069.738
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.987 . Memory (MB): peak = 2344.320 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 6089 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.348 . Memory (MB): peak = 2480.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8102 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'hdmi_text_controller_hdmi_text_controller_0_0' is not ideal for floorplanning, since the cellview 'hdmi_text_controller_v1_0_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2354.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2480.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 50d75968
+Synth Design complete, checksum: c1aff27c
 INFO: [Common 17-83] Releasing license: Synthesis
-276 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+108 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:11:43 ; elapsed = 00:17:30 . Memory (MB): peak = 2354.305 ; gain = 1321.223
+synth_design: Time (s): cpu = 00:08:46 ; elapsed = 00:11:01 . Memory (MB): peak = 2480.617 ; gain = 1445.812
 INFO: [Common 17-1381] The checkpoint 'C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1/hdmi_text_controller_hdmi_text_controller_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 2354.305 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2354.305 ; gain = 0.000
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hdmi_text_controller_hdmi_text_controller_0_0, cache-ID = 575201fa94fba174
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hdmi_text_controller_hdmi_text_controller_0_0, cache-ID = 781369bb53e95e32
 INFO: [Coretcl 2-1174] Renamed 16 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1/hdmi_text_controller_hdmi_text_controller_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2354.305 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_text_controller_hdmi_text_controller_0_0_utilization_synth.rpt -pb hdmi_text_controller_hdmi_text_controller_0_0_utilization_synth.pb
-write_verilog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2354.305 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2354.305 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 22:27:15 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 23:36:18 2026...

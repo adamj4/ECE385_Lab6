@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:hdmi_text_controller:1.0
-// IP Revision: 28
+// IP Revision: 29
 
 `timescale 1ns/1ps
 

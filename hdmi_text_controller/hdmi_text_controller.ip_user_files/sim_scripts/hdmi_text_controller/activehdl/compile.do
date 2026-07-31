@@ -21,6 +21,7 @@ vlib activehdl/proc_sys_reset_v5_0_13
 vlib activehdl/lib_pkg_v1_0_2
 vlib activehdl/lib_srl_fifo_v1_0_2
 vlib activehdl/axi_uartlite_v2_0_31
+vlib activehdl/xil_default_lib
 
 vmap xpm activehdl/xpm
 vmap microblaze_v11_0_10 activehdl/microblaze_v11_0_10
@@ -42,6 +43,7 @@ vmap proc_sys_reset_v5_0_13 activehdl/proc_sys_reset_v5_0_13
 vmap lib_pkg_v1_0_2 activehdl/lib_pkg_v1_0_2
 vmap lib_srl_fifo_v1_0_2 activehdl/lib_srl_fifo_v1_0_2
 vmap axi_uartlite_v2_0_31 activehdl/axi_uartlite_v2_0_31
+vmap xil_default_lib activehdl/xil_default_lib
 
 vlog -work xpm  -sv2k12 "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/ec67/hdl" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/7698" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0" \
 "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -152,12 +154,14 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hdmi_text_controller.gen/s
 "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
 "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
 
+vlog -work xil_default_lib  -sv2k12 "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/ec67/hdl" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/7698" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/VGA_controller.sv" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/font_rom.sv" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv" \
+"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv" \
+
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/ec67/hdl" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/7698" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0" \
-"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/Color_Mapper.sv" \
-"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/VGA_controller.sv" \
-"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/font_rom.sv" \
-"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0_AXI.sv" \
-"../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/487a/src/hdmi_text_controller_v1_0.sv" \
 "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/sim/hdmi_text_controller_hdmi_text_controller_0_0.sv" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/ec67/hdl" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/7698" "+incdir+../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0" \
