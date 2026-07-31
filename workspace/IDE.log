@@ -1892,3 +1892,564 @@ con
 ----------------End of Script----------------
 
 23:52:47 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+02:02:15 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+02:03:17 INFO  : Result from executing command 'removePlatformRepo': 
+02:03:45 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+02:03:45 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:03:47 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+02:03:51 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:03:51 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+02:03:51 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+02:03:51 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+02:03:54 INFO  : Disconnected from the channel tcfchan#77.
+02:03:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:03:54 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+02:03:54 INFO  : 'jtag frequency' command is executed.
+02:03:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:03:56 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+02:03:56 INFO  : Context for processor 'microblaze_0' is selected.
+02:03:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+02:03:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:03:56 INFO  : Context for processor 'microblaze_0' is selected.
+02:03:56 INFO  : System reset is completed.
+02:03:59 INFO  : 'after 3000' command is executed.
+02:03:59 INFO  : Context for processor 'microblaze_0' is selected.
+02:04:00 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+02:04:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+02:04:00 INFO  : Context for processor 'microblaze_0' is selected.
+02:04:00 INFO  : 'con' command is executed.
+02:04:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:04:00 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+02:35:25 INFO  : Disconnected from the channel tcfchan#80.
+02:35:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:35:26 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+02:35:26 INFO  : 'jtag frequency' command is executed.
+02:35:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:35:28 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+02:35:28 INFO  : Context for processor 'microblaze_0' is selected.
+02:35:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+02:35:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:35:28 INFO  : Context for processor 'microblaze_0' is selected.
+02:35:28 INFO  : System reset is completed.
+02:35:31 INFO  : 'after 3000' command is executed.
+02:35:31 INFO  : Context for processor 'microblaze_0' is selected.
+02:35:31 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+02:35:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+02:35:31 INFO  : Context for processor 'microblaze_0' is selected.
+02:35:32 INFO  : 'con' command is executed.
+02:35:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:35:32 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+02:49:36 INFO  : Result from executing command 'removePlatformRepo': 
+02:49:40 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+02:49:51 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+02:50:17 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+02:50:17 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:50:19 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+02:50:23 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:50:23 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+02:50:23 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+02:50:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+02:50:25 INFO  : Disconnected from the channel tcfchan#81.
+02:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:50:25 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+02:50:25 INFO  : 'jtag frequency' command is executed.
+02:50:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:50:27 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+02:50:27 INFO  : Context for processor 'microblaze_0' is selected.
+02:50:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+02:50:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:50:27 INFO  : Context for processor 'microblaze_0' is selected.
+02:50:27 INFO  : System reset is completed.
+02:50:30 INFO  : 'after 3000' command is executed.
+02:50:30 INFO  : Context for processor 'microblaze_0' is selected.
+02:50:31 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+02:50:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+02:50:31 INFO  : Context for processor 'microblaze_0' is selected.
+02:50:31 INFO  : 'con' command is executed.
+02:50:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:50:31 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+03:26:27 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+03:26:38 INFO  : Result from executing command 'removePlatformRepo': 
+03:27:05 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+03:27:05 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+03:27:07 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+03:27:11 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+03:27:11 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+03:27:11 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+03:27:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+03:27:18 INFO  : Disconnected from the channel tcfchan#85.
+03:27:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:27:18 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+03:27:18 INFO  : 'jtag frequency' command is executed.
+03:27:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:27:20 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+03:27:20 INFO  : Context for processor 'microblaze_0' is selected.
+03:27:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+03:27:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:27:20 INFO  : Context for processor 'microblaze_0' is selected.
+03:27:20 INFO  : System reset is completed.
+03:27:23 INFO  : 'after 3000' command is executed.
+03:27:23 INFO  : Context for processor 'microblaze_0' is selected.
+03:27:23 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+03:27:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+03:27:23 INFO  : Context for processor 'microblaze_0' is selected.
+03:27:23 INFO  : 'con' command is executed.
+03:27:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:27:23 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:01:28 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+04:01:39 INFO  : Result from executing command 'removePlatformRepo': 
+04:02:04 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+04:02:04 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+04:02:05 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+04:02:09 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:02:09 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+04:02:09 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+04:02:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+04:02:14 INFO  : Disconnected from the channel tcfchan#88.
+04:02:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:02:14 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:02:14 INFO  : 'jtag frequency' command is executed.
+04:02:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:02:16 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:02:16 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:02:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:02:16 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:16 INFO  : System reset is completed.
+04:02:19 INFO  : 'after 3000' command is executed.
+04:02:19 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:20 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:02:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:02:20 INFO  : Context for processor 'microblaze_0' is selected.
+04:02:20 INFO  : 'con' command is executed.
+04:02:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:02:20 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:05:10 INFO  : Disconnected from the channel tcfchan#91.
+04:05:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:05:10 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:05:10 INFO  : 'jtag frequency' command is executed.
+04:05:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:05:12 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:05:12 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:05:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:05:12 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:12 INFO  : System reset is completed.
+04:05:15 INFO  : 'after 3000' command is executed.
+04:05:15 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:15 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:05:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:05:15 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:16 INFO  : 'con' command is executed.
+04:05:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:05:16 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:05:55 INFO  : Disconnected from the channel tcfchan#92.
+04:05:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:05:56 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:05:56 INFO  : 'jtag frequency' command is executed.
+04:05:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:05:57 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:05:57 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:05:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:05:57 INFO  : Context for processor 'microblaze_0' is selected.
+04:05:58 INFO  : System reset is completed.
+04:06:01 INFO  : 'after 3000' command is executed.
+04:06:01 INFO  : Context for processor 'microblaze_0' is selected.
+04:06:01 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:06:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:06:01 INFO  : Context for processor 'microblaze_0' is selected.
+04:06:01 INFO  : 'con' command is executed.
+04:06:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:06:01 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:32:16 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+04:32:51 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+04:32:51 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+04:32:58 INFO  : Result from executing command 'removePlatformRepo': 
+04:33:17 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+04:33:17 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+04:33:19 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+04:33:23 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:33:23 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+04:33:23 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+04:33:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+04:33:27 INFO  : Disconnected from the channel tcfchan#93.
+04:33:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:33:27 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:33:27 INFO  : 'jtag frequency' command is executed.
+04:33:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:33:29 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:33:29 INFO  : Context for processor 'microblaze_0' is selected.
+04:33:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:33:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:33:29 INFO  : Context for processor 'microblaze_0' is selected.
+04:33:29 INFO  : System reset is completed.
+04:33:32 INFO  : 'after 3000' command is executed.
+04:33:32 INFO  : Context for processor 'microblaze_0' is selected.
+04:33:32 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:33:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:33:32 INFO  : Context for processor 'microblaze_0' is selected.
+04:33:32 INFO  : 'con' command is executed.
+04:33:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:33:32 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:34:29 INFO  : Disconnected from the channel tcfchan#97.
+04:34:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:34:30 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:34:30 INFO  : 'jtag frequency' command is executed.
+04:34:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:34:31 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:34:31 INFO  : Context for processor 'microblaze_0' is selected.
+04:34:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:34:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:34:31 INFO  : Context for processor 'microblaze_0' is selected.
+04:34:31 INFO  : System reset is completed.
+04:34:34 INFO  : 'after 3000' command is executed.
+04:34:34 INFO  : Context for processor 'microblaze_0' is selected.
+04:34:35 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:34:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:34:35 INFO  : Context for processor 'microblaze_0' is selected.
+04:34:35 INFO  : 'con' command is executed.
+04:34:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:34:35 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:35:53 INFO  : Disconnected from the channel tcfchan#98.
+04:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:35:54 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:35:54 INFO  : 'jtag frequency' command is executed.
+04:35:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:35:55 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:35:55 INFO  : Context for processor 'microblaze_0' is selected.
+04:35:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:35:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:35:55 INFO  : Context for processor 'microblaze_0' is selected.
+04:35:55 INFO  : System reset is completed.
+04:35:58 INFO  : 'after 3000' command is executed.
+04:35:59 INFO  : Context for processor 'microblaze_0' is selected.
+04:35:59 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:35:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:35:59 INFO  : Context for processor 'microblaze_0' is selected.
+04:35:59 INFO  : 'con' command is executed.
+04:35:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:35:59 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+04:52:31 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+04:52:44 INFO  : Result from executing command 'removePlatformRepo': 
+04:53:40 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+04:53:40 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+04:53:42 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+04:53:46 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+04:53:46 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+04:53:46 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+04:53:46 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+04:53:49 INFO  : Disconnected from the channel tcfchan#99.
+04:53:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:53:49 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+04:53:49 INFO  : 'jtag frequency' command is executed.
+04:53:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:53:51 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+04:53:51 INFO  : Context for processor 'microblaze_0' is selected.
+04:53:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+04:53:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:53:51 INFO  : Context for processor 'microblaze_0' is selected.
+04:53:51 INFO  : System reset is completed.
+04:53:54 INFO  : 'after 3000' command is executed.
+04:53:54 INFO  : Context for processor 'microblaze_0' is selected.
+04:53:55 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+04:53:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+04:53:55 INFO  : Context for processor 'microblaze_0' is selected.
+04:53:55 INFO  : 'con' command is executed.
+04:53:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:53:55 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+08:34:14 INFO  : Disconnected from the channel tcfchan#102.
+08:34:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:34:15 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+08:34:15 INFO  : 'jtag frequency' command is executed.
+08:34:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:34:16 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+08:34:16 INFO  : Context for processor 'microblaze_0' is selected.
+08:34:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+08:34:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:34:16 INFO  : Context for processor 'microblaze_0' is selected.
+08:34:16 INFO  : System reset is completed.
+08:34:19 INFO  : 'after 3000' command is executed.
+08:34:20 INFO  : Context for processor 'microblaze_0' is selected.
+08:34:20 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+08:34:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+08:34:20 INFO  : Context for processor 'microblaze_0' is selected.
+08:34:20 INFO  : 'con' command is executed.
+08:34:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:34:20 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+08:35:11 INFO  : Disconnected from the channel tcfchan#103.
+08:35:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:35:11 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+08:35:11 INFO  : 'jtag frequency' command is executed.
+08:35:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:35:12 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+08:35:13 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+08:35:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:35:13 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:13 INFO  : System reset is completed.
+08:35:16 INFO  : 'after 3000' command is executed.
+08:35:16 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:16 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+08:35:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+08:35:16 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:16 INFO  : 'con' command is executed.
+08:35:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:35:16 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+08:54:36 INFO  : Disconnected from the channel tcfchan#104.
+08:54:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:54:36 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+08:54:36 INFO  : 'jtag frequency' command is executed.
+08:54:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+08:54:37 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+08:54:38 INFO  : Context for processor 'microblaze_0' is selected.
+08:54:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+08:54:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:54:38 INFO  : Context for processor 'microblaze_0' is selected.
+08:54:38 INFO  : System reset is completed.
+08:54:41 INFO  : 'after 3000' command is executed.
+08:54:41 INFO  : Context for processor 'microblaze_0' is selected.
+08:54:41 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+08:54:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+08:54:41 INFO  : Context for processor 'microblaze_0' is selected.
+08:54:41 INFO  : 'con' command is executed.
+08:54:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:54:41 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'

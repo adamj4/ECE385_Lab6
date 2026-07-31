@@ -79,3 +79,23 @@ platform generate
 platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
 platform clean
 platform generate
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform clean
+platform generate
+platform clean
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller_top.xsa}
+platform clean
+platform generate

@@ -1,4 +1,4 @@
-23:52:36 **** Build of configuration Debug for project text_controller ****
+04:53:42 **** Build of configuration Debug for project text_controller ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -34,5 +34,5 @@ mb-size text_controller.elf  |tee "text_controller.elf.size"
 'Finished building: text_controller.elf.size'
 ' '
 
-23:52:39 Build Finished (took 2s.739ms)
+04:53:45 Build Finished (took 2s.750ms)
 

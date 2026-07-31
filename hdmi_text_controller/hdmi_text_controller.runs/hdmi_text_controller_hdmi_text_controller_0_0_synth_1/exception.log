@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\adamj\Desktop\Vitis\Lab6\hdmi_text_controller\hdmi_text_controller.runs\hdmi_text_controller_hdmi_text_controller_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

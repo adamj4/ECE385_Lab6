@@ -1,6 +1,6 @@
-23:52:13 **** Build of project hdmi_text_controller_wrapper ****
+04:53:20 **** Build of project hdmi_text_controller_wrapper ****
 buildplatform.bat 52753 hdmi_text_controller_wrapper  
-XSDB Server Channel: tcfchan#76
+XSDB Server Channel: tcfchan#101
 C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 make --no-print-directory seq_libs
@@ -218,15 +218,15 @@ ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-d
 
 "Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
 
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
 "Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
 
 make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
 ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
 OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
-_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
    81 | #pragma message ("For the sleep routines, assembly instructions are used")
@@ -262,5 +262,5 @@ te_sinit.o microblaze_0/lib/xuartlite_stats.o
 'Finished building libraries'
 
 
-23:52:35 Build Finished (took 22s.164ms)
+04:53:42 Build Finished (took 21s.556ms)
 

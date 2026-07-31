@@ -115,9 +115,7 @@ void hdmiTestWeek1()
 	while ( (hdmi_ctrl->FRAME_COUNT - initial_frame) < 60*10)
 	{
 		uint32_t old_frame_counter = hdmi_ctrl->FRAME_COUNT;
-		printf("Frame Counter: %d; Vsync DrawX: %d; Vsync DrawY: %d\n\r", hdmi_ctrl->FRAME_COUNT, hdmi_ctrl->DRAWX, hdmi_ctrl->DRAWY);
-		while (old_frame_counter == hdmi_ctrl->FRAME_COUNT); //wait for new frame
+		while (old_frame_counter == hdmi_ctrl->FRAME_COUNT);
 		sprintf ( (&hdmi_ctrl->VRAM[0] + 80*29), "Frame Counter: %d; Vsync DrawX: %d; Vsync DrawY: %d", hdmi_ctrl->FRAME_COUNT, hdmi_ctrl->DRAWX, hdmi_ctrl->DRAWY);
-		printf("Frame Counter: %d; Vsync DrawX: %d; Vsync DrawY: %d\n\r", hdmi_ctrl->FRAME_COUNT, hdmi_ctrl->DRAWX, hdmi_ctrl->DRAWY);
 	}
 }

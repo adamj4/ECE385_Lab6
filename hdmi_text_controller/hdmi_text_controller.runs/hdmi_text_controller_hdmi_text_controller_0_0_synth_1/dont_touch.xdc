@@ -4,11 +4,11 @@
 # IP: C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.srcs/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/hdmi_text_controller_hdmi_text_controller_0_0.xci
 # IP: The module: 'hdmi_text_controller_hdmi_text_controller_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
-
 # IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdmi_tx_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_tx_0 || ORIG_REF_NAME==hdmi_tx_0} -quiet] -quiet
+
+# IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
 
 # XDC: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -18,11 +18,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # IP: C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.srcs/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/hdmi_text_controller_hdmi_text_controller_0_0.xci
 # IP: The module: 'hdmi_text_controller_hdmi_text_controller_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
-
 # IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdmi_tx_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_tx_0 || ORIG_REF_NAME==hdmi_tx_0} -quiet] -quiet
+
+# IP: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
 
 # XDC: c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

@@ -1,6 +1,6 @@
-23:52:40 **** Build of configuration Debug for project text_controller_system ****
+04:53:46 **** Build of configuration Debug for project text_controller_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-23:52:40 Build Finished (took 313ms)
+04:53:46 Build Finished (took 280ms)
 

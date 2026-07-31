@@ -1,6 +1,6 @@
-2026-07-30T23:52:13.832225600255-23:52:13 **** Build of project hdmi_text_controller_wrapper ****
+2026-07-31T04:53:20.575884900255-04:53:20 **** Build of project hdmi_text_controller_wrapper ****
 000-buildplatform.bat 52753 hdmi_text_controller_wrapper  
-000-XSDB Server Channel: tcfchan#76
+000-XSDB Server Channel: tcfchan#101
 000-C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
@@ -218,15 +218,15 @@
 000-
 000-"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
 000-
+000-make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+000-_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
 000-"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
 000-
 000-make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
 000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
 000-OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
-000-_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
 000-
 000/hdmi_text_controller_wrapper81-1-1'#pragma message: For the sleep routines, assembly instructions are used'0-microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
 000-   81 | #pragma message ("For the sleep routines, assembly instructions are used")
@@ -262,5 +262,5 @@
 000-'Finished building libraries'
 000-
 00255-
-23:52:35 Build Finished (took 22s.164ms)
+04:53:42 Build Finished (took 21s.556ms)
 

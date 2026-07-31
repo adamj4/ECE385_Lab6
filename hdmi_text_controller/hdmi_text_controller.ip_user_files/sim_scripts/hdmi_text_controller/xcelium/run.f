@@ -108,11 +108,11 @@
   "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
 -endlib
 -makelib xcelium_lib/xil_default_lib -sv \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/Color_Mapper.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/VGA_controller.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/font_rom.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0_AXI.sv" \
-  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/4bee/src/hdmi_text_controller_v1_0.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/81a6/src/Color_Mapper.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/81a6/src/VGA_controller.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/81a6/src/font_rom.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/81a6/src/hdmi_text_controller_v1_0_AXI.sv" \
+  "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/81a6/src/hdmi_text_controller_v1_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
   "../../../../hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/sim/hdmi_text_controller_hdmi_text_controller_0_0.sv" \

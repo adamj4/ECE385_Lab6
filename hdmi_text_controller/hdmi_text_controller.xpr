@@ -66,13 +66,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="26"/>
-    <Option Name="WTModelSimExportSim" Val="26"/>
-    <Option Name="WTQuestaExportSim" Val="26"/>
+    <Option Name="WTXSimExportSim" Val="33"/>
+    <Option Name="WTModelSimExportSim" Val="33"/>
+    <Option Name="WTQuestaExportSim" Val="33"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="26"/>
-    <Option Name="WTRivieraExportSim" Val="26"/>
-    <Option Name="WTActivehdlExportSim" Val="26"/>
+    <Option Name="WTVcsExportSim" Val="33"/>
+    <Option Name="WTRivieraExportSim" Val="33"/>
+    <Option Name="WTActivehdlExportSim" Val="33"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -96,14 +96,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_text_controller.bd" FileRelPathName="ip/hdmi_text_controller_clk_wiz_1_3/hdmi_text_controller_clk_wiz_1_3.xci">
+          <Proxy FileSetName="hdmi_text_controller_clk_wiz_1_3"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_text_controller.bd" FileRelPathName="ip/hdmi_text_controller_lmb_bram_3/hdmi_text_controller_lmb_bram_3.xci">
           <Proxy FileSetName="hdmi_text_controller_lmb_bram_3"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_text_controller.bd" FileRelPathName="ip/hdmi_text_controller_hdmi_text_controller_0_0/hdmi_text_controller_hdmi_text_controller_0_0.xci">
           <Proxy FileSetName="hdmi_text_controller_hdmi_text_controller_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_text_controller.bd" FileRelPathName="ip/hdmi_text_controller_clk_wiz_1_3/hdmi_text_controller_clk_wiz_1_3.xci">
-          <Proxy FileSetName="hdmi_text_controller_clk_wiz_1_3"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Lab6/hdmi_text_controller_top.sv">
@@ -260,9 +260,7 @@
     </Run>
     <Run Id="hdmi_text_controller_hdmi_text_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_text_controller_hdmi_text_controller_0_0" Part="xc7s50csga324-1" ConstrsSet="hdmi_text_controller_hdmi_text_controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_text_controller_hdmi_text_controller_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_text_controller_hdmi_text_controller_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_text_controller_hdmi_text_controller_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -324,9 +322,7 @@
     </Run>
     <Run Id="hdmi_text_controller_hdmi_text_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="hdmi_text_controller_hdmi_text_controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_text_controller_hdmi_text_controller_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_text_controller_hdmi_text_controller_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_text_controller_hdmi_text_controller_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
