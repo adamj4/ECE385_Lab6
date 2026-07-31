@@ -9,7 +9,7 @@
 //Used for simulation of AXI4-Lite bus as well as generating
 //simulation video image for testing
 
-`define SIM_VIDEO //Comment out to simulate AXI bus only
+//`define SIM_VIDEO //Comment out to simulate AXI bus only
                     //Uncomment to simulate entire screen and write BMP (slow)
 
 module hdmi_text_controller_tb();
@@ -65,9 +65,7 @@ module hdmi_text_controller_tb();
     
     
     
-    //TEST
     
-    //logic [31:0] fooreg [604];
     logic [9:0] reg_to_read;
     assign reg_to_read = hdmi_text_controller_v1_0_inst.reg_to_read;
     logic [31:0] reg_value;
@@ -107,8 +105,6 @@ module hdmi_text_controller_tb();
 		.axi_rresp(read_resp),
 		.axi_rvalid(read_data_valid),
 		.axi_rready(read_data_ready)
-		//TEST
-		//.fooreg(fooreg)
 		
 	);
 	

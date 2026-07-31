@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="132"></ZoomStartTime>
+      <ZoomEndTime time="133"></ZoomEndTime>
+      <Cursor1Time time="133"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_drawX" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_drawX[9:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_drawX[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_drawY" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_drawY[9:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_drawY[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_locked" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_locked</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_locked</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_clk25" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_clk25</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_clk25</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_clk125" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_clk125</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_clk125</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_hsync" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_hsync</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_hsync</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hdmi_text_controller_i/hdmi_text_controller_0_debug_vsync" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hdmi_text_controller_i/hdmi_text_controller_0_debug_vsync</obj_property>
+      <obj_property name="ObjectShortName">hdmi_text_controller_0_debug_vsync</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

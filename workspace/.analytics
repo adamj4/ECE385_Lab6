@@ -1,0 +1,127 @@
+timestamp=[2026-07-28 20:30:08], mode=WORKBENCH_START, duration=0:00:06.075, duration_ms=6075, data={}
+timestamp=[2026-07-28 20:30:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.344, duration_ms=344, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-07-28 20:30:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.110, duration_ms=1110, data={}
+timestamp=[2026-07-28 20:33:17], mode=APP_CREATION, duration=0:00:10.400, duration_ms=10400, data={name=text_controller, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=hdmi_text_controller_wrapper, application_type=application}
+timestamp=[2026-07-28 20:36:08], mode=PLATFORM_GENERATION, duration=0:00:09.146, duration_ms=9146, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 20:36:08], mode=BUILD, duration=0:00:00.421, duration_ms=421, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 20:36:22], mode=BUILD, duration=0:00:02.590, duration_ms=2590, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 20:39:21], mode=BUILD, duration=0:00:01.049, duration_ms=1049, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:07:31], mode=PLATFORM_GENERATION, duration=0:00:02.806, duration_ms=2806, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:07:31], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 21:07:47], mode=PLATFORM_GENERATION, duration=0:00:13.308, duration_ms=13308, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:07:51], mode=BUILD, duration=0:00:01.859, duration_ms=1859, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:07:52], mode=BUILD, duration=0:00:00.274, duration_ms=274, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:30:51], mode=PLATFORM_GENERATION, duration=0:00:02.866, duration_ms=2866, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:30:52], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 21:30:52], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 21:31:10], mode=PLATFORM_GENERATION, duration=0:00:10.845, duration_ms=10845, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:31:12], mode=BUILD, duration=0:00:02.004, duration_ms=2004, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:31:13], mode=BUILD, duration=0:00:00.355, duration_ms=355, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:47:55], mode=PLATFORM_GENERATION, duration=0:00:02.700, duration_ms=2700, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:47:55], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 21:47:55], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 21:48:30], mode=PLATFORM_GENERATION, duration=0:00:08.249, duration_ms=8249, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 21:48:31], mode=BUILD, duration=0:00:00.834, duration_ms=834, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:48:56], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 21:48:57], mode=BUILD, duration=0:00:00.213, duration_ms=213, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 22:00:59], mode=PLATFORM_GENERATION, duration=0:00:03.202, duration_ms=3202, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 22:00:59], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 22:00:59], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-28 22:01:13], mode=PLATFORM_GENERATION, duration=0:00:10.791, duration_ms=10791, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-28 22:01:15], mode=BUILD, duration=0:00:01.791, duration_ms=1791, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-28 22:01:16], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:14:28], mode=PLATFORM_GENERATION, duration=0:00:11.240, duration_ms=11240, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:14:28], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:14:28], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:14:46], mode=PLATFORM_GENERATION, duration=0:00:14.304, duration_ms=14304, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:14:49], mode=BUILD, duration=0:00:03.468, duration_ms=3468, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:14:50], mode=BUILD, duration=0:00:00.267, duration_ms=267, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:27:47], mode=PLATFORM_GENERATION, duration=0:00:02.617, duration_ms=2617, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:27:47], mode=BUILD, duration=0:00:00.150, duration_ms=150, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:27:47], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:27:59], mode=PLATFORM_GENERATION, duration=0:00:08.188, duration_ms=8188, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:28:01], mode=BUILD, duration=0:00:01.843, duration_ms=1843, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:28:02], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:30:42], mode=PLATFORM_GENERATION, duration=0:00:02.529, duration_ms=2529, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:30:43], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:30:43], mode=BUILD, duration=0:00:00.128, duration_ms=128, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 09:30:53], mode=PLATFORM_GENERATION, duration=0:00:06.917, duration_ms=6917, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 09:30:56], mode=BUILD, duration=0:00:01.770, duration_ms=1770, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 09:30:56], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 10:12:19], mode=PLATFORM_GENERATION, duration=0:00:03.527, duration_ms=3527, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 10:12:19], mode=BUILD, duration=0:00:00.287, duration_ms=287, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 10:12:19], mode=BUILD, duration=0:00:00.261, duration_ms=261, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 10:12:37], mode=PLATFORM_GENERATION, duration=0:00:14.197, duration_ms=14197, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 10:12:40], mode=BUILD, duration=0:00:02.383, duration_ms=2383, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 10:12:40], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 10:13:13], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 10:13:14], mode=BUILD, duration=0:00:01.205, duration_ms=1205, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 10:13:14], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 11:54:21], mode=PLATFORM_GENERATION, duration=0:00:43.395, duration_ms=43395, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 11:54:24], mode=BUILD, duration=0:00:02.218, duration_ms=2218, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 11:54:25], mode=BUILD, duration=0:00:00.327, duration_ms=327, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 11:55:03], mode=PLATFORM_GENERATION, duration=0:00:32.938, duration_ms=32938, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 11:55:17], mode=BUILD, duration=0:00:10.302, duration_ms=10302, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 11:55:21], mode=BUILD, duration=0:00:01.813, duration_ms=1813, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 12:29:58], mode=PLATFORM_GENERATION, duration=0:00:05.600, duration_ms=5600, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 12:29:58], mode=BUILD, duration=0:00:00.333, duration_ms=333, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 12:29:58], mode=BUILD, duration=0:00:00.326, duration_ms=326, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 12:30:19], mode=PLATFORM_GENERATION, duration=0:00:18.009, duration_ms=18009, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 12:30:22], mode=BUILD, duration=0:00:02.507, duration_ms=2507, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 12:30:23], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 12:46:35], mode=BUILD, duration=0:00:00.263, duration_ms=263, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 12:46:35], mode=BUILD, duration=0:00:00.271, duration_ms=271, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 13:31:15], mode=PLATFORM_GENERATION, duration=0:00:05.125, duration_ms=5125, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 13:31:16], mode=BUILD, duration=0:00:00.335, duration_ms=335, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 13:31:16], mode=BUILD, duration=0:00:00.294, duration_ms=294, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 13:31:42], mode=PLATFORM_GENERATION, duration=0:00:15.684, duration_ms=15684, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 13:31:44], mode=BUILD, duration=0:00:02.122, duration_ms=2122, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 13:31:45], mode=BUILD, duration=0:00:00.271, duration_ms=271, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 14:44:25], mode=PLATFORM_GENERATION, duration=0:00:05.399, duration_ms=5399, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 14:44:25], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 14:44:25], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 14:44:45], mode=PLATFORM_GENERATION, duration=0:00:15.696, duration_ms=15696, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 14:44:48], mode=BUILD, duration=0:00:02.099, duration_ms=2099, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 14:44:49], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 14:56:12], mode=PLATFORM_GENERATION, duration=0:00:04.814, duration_ms=4814, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 14:56:13], mode=BUILD, duration=0:00:00.387, duration_ms=387, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 14:56:13], mode=BUILD, duration=0:00:00.266, duration_ms=266, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-29 14:56:37], mode=PLATFORM_GENERATION, duration=0:00:14.789, duration_ms=14789, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-29 14:56:39], mode=BUILD, duration=0:00:02.090, duration_ms=2090, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-29 14:56:40], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 17:39:03], mode=PLATFORM_GENERATION, duration=0:00:14.078, duration_ms=14078, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 17:39:04], mode=BUILD, duration=0:00:00.620, duration_ms=620, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 17:39:04], mode=BUILD, duration=0:00:00.497, duration_ms=497, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 17:39:49], mode=PLATFORM_GENERATION, duration=0:00:28.619, duration_ms=28619, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 17:39:54], mode=BUILD, duration=0:00:04.508, duration_ms=4508, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 17:39:55], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 18:18:12], mode=PLATFORM_GENERATION, duration=0:00:06.978, duration_ms=6978, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 18:18:13], mode=BUILD, duration=0:00:00.431, duration_ms=431, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 18:18:13], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 18:18:51], mode=PLATFORM_GENERATION, duration=0:00:21.399, duration_ms=21399, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 18:18:53], mode=BUILD, duration=0:00:01.938, duration_ms=1938, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 18:18:54], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 19:00:47], mode=PLATFORM_GENERATION, duration=0:00:19.633, duration_ms=19633, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 19:00:47], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 19:00:47], mode=BUILD, duration=0:00:00.281, duration_ms=281, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 19:01:17], mode=PLATFORM_GENERATION, duration=0:00:24.066, duration_ms=24066, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 19:01:21], mode=BUILD, duration=0:00:03.651, duration_ms=3651, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 19:01:22], mode=BUILD, duration=0:00:00.351, duration_ms=351, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 19:36:56], mode=PLATFORM_GENERATION, duration=0:00:07.634, duration_ms=7634, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 19:36:57], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 19:36:57], mode=BUILD, duration=0:00:00.477, duration_ms=477, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 19:37:24], mode=PLATFORM_GENERATION, duration=0:00:24.583, duration_ms=24583, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 19:37:27], mode=BUILD, duration=0:00:02.627, duration_ms=2627, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 19:37:29], mode=BUILD, duration=0:00:00.331, duration_ms=331, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 21:44:19], mode=PLATFORM_GENERATION, duration=0:00:06.276, duration_ms=6276, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 21:44:20], mode=BUILD, duration=0:00:00.353, duration_ms=353, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 21:44:20], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 21:45:18], mode=PLATFORM_GENERATION, duration=0:00:35.158, duration_ms=35158, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 21:45:21], mode=BUILD, duration=0:00:02.495, duration_ms=2495, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 21:45:22], mode=BUILD, duration=0:00:00.273, duration_ms=273, data={name=text_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 22:42:29], mode=PLATFORM_GENERATION, duration=0:00:08.603, duration_ms=8603, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 22:42:30], mode=BUILD, duration=0:00:00.585, duration_ms=585, data={name=text_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 22:42:30], mode=BUILD, duration=0:00:00.352, duration_ms=352, data={name=text_controller_system, configuration=Debug, clean_build=true}
+timestamp=[2026-07-30 22:43:21], mode=PLATFORM_GENERATION, duration=0:00:22.404, duration_ms=22404, data={name=hdmi_text_controller_wrapper}
+timestamp=[2026-07-30 22:43:24], mode=BUILD, duration=0:00:03.047, duration_ms=3047, data={name=text_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-07-30 22:43:26], mode=BUILD, duration=0:00:00.327, duration_ms=327, data={name=text_controller_system, configuration=Debug, clean_build=false}

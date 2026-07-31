@@ -108,7 +108,9 @@ void hdmiTestWeek1()
 	hdmiClr();
 
 	char completed[] = "Synchronization registers test, verify frame counter updates on display";
+    printf ("Before completed.\n\r");
 	memcpy((void*)&hdmi_ctrl->VRAM[0],completed, sizeof(completed));
+    printf("After completed.\n\r");
 	printf( "%s \n\r", completed);
 
 	uint32_t initial_frame = hdmi_ctrl->FRAME_COUNT;

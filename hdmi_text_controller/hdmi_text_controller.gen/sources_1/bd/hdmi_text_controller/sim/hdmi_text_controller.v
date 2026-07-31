@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Jul 28 17:10:54 2026
+//Date        : Thu Jul 30 22:05:05 2026
 //Host        : LAPTOP-SP4K5KFB running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_text_controller.bd
 //Design      : hdmi_text_controller
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi_text_controller,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_text_controller,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=12,da_clkrst_cnt=2,da_mb_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_text_controller.hwdef" *) 
+(* CORE_GENERATION_INFO = "hdmi_text_controller,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_text_controller,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=17,da_clkrst_cnt=2,da_mb_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_text_controller.hwdef" *) 
 module hdmi_text_controller
    (HDMI_0_tmds_clk_n,
     HDMI_0_tmds_clk_p,
@@ -155,7 +155,7 @@ module hdmi_text_controller
   assign clk_100MHz_1 = clk_100MHz;
   assign reset_rtl_0_1 = reset_rtl_0;
   assign uart_rtl_0_txd = axi_uartlite_0_UART_TxD;
-  hdmi_text_controller_axi_uartlite_0_2 axi_uartlite_0
+  hdmi_text_controller_axi_uartlite_0_3 axi_uartlite_0
        (.interrupt(axi_uartlite_0_interrupt),
         .rx(axi_uartlite_0_UART_RxD),
         .s_axi_aclk(microblaze_0_Clk),
@@ -178,12 +178,12 @@ module hdmi_text_controller
         .s_axi_wstrb(microblaze_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
-  hdmi_text_controller_clk_wiz_1_2 clk_wiz_1
+  hdmi_text_controller_clk_wiz_1_3 clk_wiz_1
        (.clk_in1(clk_100MHz_1),
         .clk_out1(microblaze_0_Clk),
         .locked(clk_wiz_1_locked),
         .reset(mdm_1_debug_sys_rst));
-  hdmi_text_controller_hdmi_text_controller_0_1 hdmi_text_controller_0
+  hdmi_text_controller_hdmi_text_controller_0_0 hdmi_text_controller_0
        (.axi_aclk(microblaze_0_Clk),
         .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[11:0]),
         .axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
@@ -209,7 +209,7 @@ module hdmi_text_controller
         .hdmi_clk_p(hdmi_text_controller_0_HDMI_TMDS_CLK_P),
         .hdmi_tx_n(hdmi_text_controller_0_HDMI_TMDS_DATA_N),
         .hdmi_tx_p(hdmi_text_controller_0_HDMI_TMDS_DATA_P));
-  hdmi_text_controller_mdm_1_2 mdm_1
+  hdmi_text_controller_mdm_1_3 mdm_1
        (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_0_debug_CLK),
         .Dbg_Disable_0(microblaze_0_debug_DISABLE),
@@ -222,7 +222,7 @@ module hdmi_text_controller
         .Debug_SYS_Rst(mdm_1_debug_sys_rst));
   (* BMM_INFO_PROCESSOR = "microblaze-le > hdmi_text_controller microblaze_0_local_memory/dlmb_bram_if_cntlr" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  hdmi_text_controller_microblaze_0_2 microblaze_0
+  hdmi_text_controller_microblaze_0_3 microblaze_0
        (.Byte_Enable(microblaze_0_dlmb_1_BE),
         .Clk(microblaze_0_Clk),
         .DCE(microblaze_0_dlmb_1_CE),
@@ -275,7 +275,7 @@ module hdmi_text_controller
         .Read_Strobe(microblaze_0_dlmb_1_READSTROBE),
         .Reset(rst_clk_wiz_1_100M_mb_reset),
         .Write_Strobe(microblaze_0_dlmb_1_WRITESTROBE));
-  hdmi_text_controller_microblaze_0_axi_intc_2 microblaze_0_axi_intc
+  hdmi_text_controller_microblaze_0_axi_intc_3 microblaze_0_axi_intc
        (.interrupt_address(microblaze_0_interrupt_ADDRESS),
         .intr(axi_uartlite_0_interrupt),
         .irq(microblaze_0_interrupt_INTERRUPT),
@@ -301,7 +301,7 @@ module hdmi_text_controller
         .s_axi_wready(microblaze_0_intc_axi_WREADY),
         .s_axi_wstrb(microblaze_0_intc_axi_WSTRB),
         .s_axi_wvalid(microblaze_0_intc_axi_WVALID));
-  hdmi_text_controller_microblaze_0_axi_periph_2 microblaze_0_axi_periph
+  hdmi_text_controller_microblaze_0_axi_periph_3 microblaze_0_axi_periph
        (.ACLK(microblaze_0_Clk),
         .ARESETN(rst_clk_wiz_1_100M_peripheral_aresetn),
         .M00_ACLK(microblaze_0_Clk),
@@ -406,7 +406,7 @@ module hdmi_text_controller
         .ILMB_wait(microblaze_0_ilmb_1_WAIT),
         .LMB_Clk(microblaze_0_Clk),
         .SYS_Rst(rst_clk_wiz_1_100M_bus_struct_reset));
-  hdmi_text_controller_rst_clk_wiz_1_100M_2 rst_clk_wiz_1_100M
+  hdmi_text_controller_rst_clk_wiz_1_100M_3 rst_clk_wiz_1_100M
        (.aux_reset_in(1'b1),
         .bus_struct_reset(rst_clk_wiz_1_100M_bus_struct_reset),
         .dcm_locked(clk_wiz_1_locked),
@@ -417,7 +417,7 @@ module hdmi_text_controller
         .slowest_sync_clk(microblaze_0_Clk));
 endmodule
 
-module hdmi_text_controller_microblaze_0_axi_periph_2
+module hdmi_text_controller_microblaze_0_axi_periph_3
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -970,7 +970,7 @@ module hdmi_text_controller_microblaze_0_axi_periph_2
         .S_AXI_wready(microblaze_0_axi_periph_to_s00_couplers_WREADY),
         .S_AXI_wstrb(microblaze_0_axi_periph_to_s00_couplers_WSTRB),
         .S_AXI_wvalid(microblaze_0_axi_periph_to_s00_couplers_WVALID));
-  hdmi_text_controller_xbar_2 xbar
+  hdmi_text_controller_xbar_3 xbar
        (.aclk(microblaze_0_axi_periph_ACLK_net),
         .aresetn(microblaze_0_axi_periph_ARESETN_net),
         .m_axi_araddr({xbar_to_m02_couplers_ARADDR,xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),
@@ -1548,7 +1548,7 @@ module microblaze_0_local_memory_imp_1TB29OV
   assign microblaze_0_ilmb_READSTROBE = ILMB_readstrobe;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x00000000 32 > hdmi_text_controller microblaze_0_local_memory/lmb_bram" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  hdmi_text_controller_dlmb_bram_if_cntlr_2 dlmb_bram_if_cntlr
+  hdmi_text_controller_dlmb_bram_if_cntlr_3 dlmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_dlmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_dlmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_dlmb_cntlr_DOUT[31],microblaze_0_dlmb_cntlr_DOUT[30],microblaze_0_dlmb_cntlr_DOUT[29],microblaze_0_dlmb_cntlr_DOUT[28],microblaze_0_dlmb_cntlr_DOUT[27],microblaze_0_dlmb_cntlr_DOUT[26],microblaze_0_dlmb_cntlr_DOUT[25],microblaze_0_dlmb_cntlr_DOUT[24],microblaze_0_dlmb_cntlr_DOUT[23],microblaze_0_dlmb_cntlr_DOUT[22],microblaze_0_dlmb_cntlr_DOUT[21],microblaze_0_dlmb_cntlr_DOUT[20],microblaze_0_dlmb_cntlr_DOUT[19],microblaze_0_dlmb_cntlr_DOUT[18],microblaze_0_dlmb_cntlr_DOUT[17],microblaze_0_dlmb_cntlr_DOUT[16],microblaze_0_dlmb_cntlr_DOUT[15],microblaze_0_dlmb_cntlr_DOUT[14],microblaze_0_dlmb_cntlr_DOUT[13],microblaze_0_dlmb_cntlr_DOUT[12],microblaze_0_dlmb_cntlr_DOUT[11],microblaze_0_dlmb_cntlr_DOUT[10],microblaze_0_dlmb_cntlr_DOUT[9],microblaze_0_dlmb_cntlr_DOUT[8],microblaze_0_dlmb_cntlr_DOUT[7],microblaze_0_dlmb_cntlr_DOUT[6],microblaze_0_dlmb_cntlr_DOUT[5],microblaze_0_dlmb_cntlr_DOUT[4],microblaze_0_dlmb_cntlr_DOUT[3],microblaze_0_dlmb_cntlr_DOUT[2],microblaze_0_dlmb_cntlr_DOUT[1],microblaze_0_dlmb_cntlr_DOUT[0]}),
@@ -1569,7 +1569,7 @@ module microblaze_0_local_memory_imp_1TB29OV
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  hdmi_text_controller_dlmb_v10_2 dlmb_v10
+  hdmi_text_controller_dlmb_v10_3 dlmb_v10
        (.LMB_ABus(microblaze_0_dlmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_dlmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_dlmb_bus_BE),
@@ -1594,7 +1594,7 @@ module microblaze_0_local_memory_imp_1TB29OV
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  hdmi_text_controller_ilmb_bram_if_cntlr_2 ilmb_bram_if_cntlr
+  hdmi_text_controller_ilmb_bram_if_cntlr_3 ilmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_ilmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_ilmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_ilmb_cntlr_DOUT[31],microblaze_0_ilmb_cntlr_DOUT[30],microblaze_0_ilmb_cntlr_DOUT[29],microblaze_0_ilmb_cntlr_DOUT[28],microblaze_0_ilmb_cntlr_DOUT[27],microblaze_0_ilmb_cntlr_DOUT[26],microblaze_0_ilmb_cntlr_DOUT[25],microblaze_0_ilmb_cntlr_DOUT[24],microblaze_0_ilmb_cntlr_DOUT[23],microblaze_0_ilmb_cntlr_DOUT[22],microblaze_0_ilmb_cntlr_DOUT[21],microblaze_0_ilmb_cntlr_DOUT[20],microblaze_0_ilmb_cntlr_DOUT[19],microblaze_0_ilmb_cntlr_DOUT[18],microblaze_0_ilmb_cntlr_DOUT[17],microblaze_0_ilmb_cntlr_DOUT[16],microblaze_0_ilmb_cntlr_DOUT[15],microblaze_0_ilmb_cntlr_DOUT[14],microblaze_0_ilmb_cntlr_DOUT[13],microblaze_0_ilmb_cntlr_DOUT[12],microblaze_0_ilmb_cntlr_DOUT[11],microblaze_0_ilmb_cntlr_DOUT[10],microblaze_0_ilmb_cntlr_DOUT[9],microblaze_0_ilmb_cntlr_DOUT[8],microblaze_0_ilmb_cntlr_DOUT[7],microblaze_0_ilmb_cntlr_DOUT[6],microblaze_0_ilmb_cntlr_DOUT[5],microblaze_0_ilmb_cntlr_DOUT[4],microblaze_0_ilmb_cntlr_DOUT[3],microblaze_0_ilmb_cntlr_DOUT[2],microblaze_0_ilmb_cntlr_DOUT[1],microblaze_0_ilmb_cntlr_DOUT[0]}),
@@ -1615,7 +1615,7 @@ module microblaze_0_local_memory_imp_1TB29OV
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  hdmi_text_controller_ilmb_v10_2 ilmb_v10
+  hdmi_text_controller_ilmb_v10_3 ilmb_v10
        (.LMB_ABus(microblaze_0_ilmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_ilmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_ilmb_bus_BE),
@@ -1640,7 +1640,7 @@ module microblaze_0_local_memory_imp_1TB29OV
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  hdmi_text_controller_lmb_bram_2 lmb_bram
+  hdmi_text_controller_lmb_bram_3 lmb_bram
        (.addra({microblaze_0_dlmb_cntlr_ADDR[0],microblaze_0_dlmb_cntlr_ADDR[1],microblaze_0_dlmb_cntlr_ADDR[2],microblaze_0_dlmb_cntlr_ADDR[3],microblaze_0_dlmb_cntlr_ADDR[4],microblaze_0_dlmb_cntlr_ADDR[5],microblaze_0_dlmb_cntlr_ADDR[6],microblaze_0_dlmb_cntlr_ADDR[7],microblaze_0_dlmb_cntlr_ADDR[8],microblaze_0_dlmb_cntlr_ADDR[9],microblaze_0_dlmb_cntlr_ADDR[10],microblaze_0_dlmb_cntlr_ADDR[11],microblaze_0_dlmb_cntlr_ADDR[12],microblaze_0_dlmb_cntlr_ADDR[13],microblaze_0_dlmb_cntlr_ADDR[14],microblaze_0_dlmb_cntlr_ADDR[15],microblaze_0_dlmb_cntlr_ADDR[16],microblaze_0_dlmb_cntlr_ADDR[17],microblaze_0_dlmb_cntlr_ADDR[18],microblaze_0_dlmb_cntlr_ADDR[19],microblaze_0_dlmb_cntlr_ADDR[20],microblaze_0_dlmb_cntlr_ADDR[21],microblaze_0_dlmb_cntlr_ADDR[22],microblaze_0_dlmb_cntlr_ADDR[23],microblaze_0_dlmb_cntlr_ADDR[24],microblaze_0_dlmb_cntlr_ADDR[25],microblaze_0_dlmb_cntlr_ADDR[26],microblaze_0_dlmb_cntlr_ADDR[27],microblaze_0_dlmb_cntlr_ADDR[28],microblaze_0_dlmb_cntlr_ADDR[29],microblaze_0_dlmb_cntlr_ADDR[30],microblaze_0_dlmb_cntlr_ADDR[31]}),
         .addrb({microblaze_0_ilmb_cntlr_ADDR[0],microblaze_0_ilmb_cntlr_ADDR[1],microblaze_0_ilmb_cntlr_ADDR[2],microblaze_0_ilmb_cntlr_ADDR[3],microblaze_0_ilmb_cntlr_ADDR[4],microblaze_0_ilmb_cntlr_ADDR[5],microblaze_0_ilmb_cntlr_ADDR[6],microblaze_0_ilmb_cntlr_ADDR[7],microblaze_0_ilmb_cntlr_ADDR[8],microblaze_0_ilmb_cntlr_ADDR[9],microblaze_0_ilmb_cntlr_ADDR[10],microblaze_0_ilmb_cntlr_ADDR[11],microblaze_0_ilmb_cntlr_ADDR[12],microblaze_0_ilmb_cntlr_ADDR[13],microblaze_0_ilmb_cntlr_ADDR[14],microblaze_0_ilmb_cntlr_ADDR[15],microblaze_0_ilmb_cntlr_ADDR[16],microblaze_0_ilmb_cntlr_ADDR[17],microblaze_0_ilmb_cntlr_ADDR[18],microblaze_0_ilmb_cntlr_ADDR[19],microblaze_0_ilmb_cntlr_ADDR[20],microblaze_0_ilmb_cntlr_ADDR[21],microblaze_0_ilmb_cntlr_ADDR[22],microblaze_0_ilmb_cntlr_ADDR[23],microblaze_0_ilmb_cntlr_ADDR[24],microblaze_0_ilmb_cntlr_ADDR[25],microblaze_0_ilmb_cntlr_ADDR[26],microblaze_0_ilmb_cntlr_ADDR[27],microblaze_0_ilmb_cntlr_ADDR[28],microblaze_0_ilmb_cntlr_ADDR[29],microblaze_0_ilmb_cntlr_ADDR[30],microblaze_0_ilmb_cntlr_ADDR[31]}),
         .clka(microblaze_0_dlmb_cntlr_CLK),
