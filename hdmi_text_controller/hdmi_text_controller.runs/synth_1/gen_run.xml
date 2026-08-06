@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1785511036" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/hdmi_text_controller_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1785957242" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/hdmi_text_controller_wrapper.dcp">
   <File Type="PA-TCL" Name="hdmi_text_controller_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hdmi_text_controller_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hdmi_text_controller_top_reports.tcl"/>
@@ -85,7 +85,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_text_controller_lmb_bram_3"/>

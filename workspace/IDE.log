@@ -2453,3 +2453,411 @@ con
 ----------------End of Script----------------
 
 08:54:41 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+10:36:07 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+10:36:21 INFO  : Result from executing command 'removePlatformRepo': 
+10:36:56 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+10:36:56 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:36:58 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+10:36:58 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:36:58 ERROR : Failed to update application flags from BSP for 'text_controller'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+10:37:03 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+10:37:03 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:37:07 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:392) [com.xilinx.sdk.xsdb_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325) [com.xilinx.sdk.xsdb_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.hw.internal.HwPlatform.openHw(HwPlatform.java:371) [com.xilinx.sdk.hw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:358) [com.xilinx.sdk.hw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:56) [com.xilinx.sdk.hw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigUtil.createHwPlatform(SdsLaunchConfigUtil.java:57) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.iniHwPlatform(SdsLaunchConfigModel.java:187) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.getHwPlatform(BaseLaunchConfigModel.java:577) [com.xilinx.sdk.tcf.debug_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:173) [com.xilinx.sdk.tcf.debug_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156) [com.xilinx.sdk.tcf.debug_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:109) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85) [com.xilinx.sdx.sdsoc.debug_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:641) [com.xilinx.sdx.sdsoc.debug_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:615) [com.xilinx.sdx.sdsoc.debug_1.0.0.202210132147.jar:?]
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79) [org.eclipse.tcf.debug.ui_1.7.0.202210132147.jar:?]
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532) [org.eclipse.tcf.debug_1.7.0.202210132147.jar:?]
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643) [org.eclipse.tcf.debug_1.7.0.202210132147.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858) [org.eclipse.tcf.core_1.7.0.202210132147.jar:?]
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98) [org.eclipse.tcf_1.7.0.202210132147.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:37:07 INFO  : Disconnected from the channel tcfchan#105.
+10:37:07 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:37:07 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:37:07 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:37:07 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=text_controller;fileType=hw;}' in launch configuration 'SystemDebugger_text_controller_system_Standalone'.
+10:37:43 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+10:37:54 INFO  : Result from executing command 'removePlatformRepo': 
+10:38:25 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+10:38:25 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:38:27 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+10:38:27 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:38:27 ERROR : Failed to update application flags from BSP for 'text_controller'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+10:38:30 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+10:38:30 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:38:35 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:38:35 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:38:35 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:38:35 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=text_controller;fileType=hw;}' in launch configuration 'SystemDebugger_text_controller_system_Standalone'.
+10:39:24 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:39:24 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:39:24 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:39:24 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=text_controller;fileType=hw;}' in launch configuration 'SystemDebugger_text_controller_system_Standalone'.
+10:58:02 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:58:02 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:58:02 ERROR : Failed to openhw "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top (1).xsa"
+Reason: wrong # args: should be "openhw <hw-proj | xsa-file>"
+10:58:02 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=text_controller;fileType=hw;}' in launch configuration 'SystemDebugger_text_controller_system_Standalone'.
+10:58:23 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+10:59:32 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+10:59:47 INFO  : Result from executing command 'removePlatformRepo': 
+11:00:13 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+11:00:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:00:15 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+11:00:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:00:27 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:00:27 INFO  : 'jtag frequency' command is executed.
+11:00:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:00:28 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:00:28 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+11:00:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:00:28 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:28 INFO  : System reset is completed.
+11:00:31 INFO  : 'after 3000' command is executed.
+11:00:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:32 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:00:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:00:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:32 INFO  : 'con' command is executed.
+11:00:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:00:32 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:01:35 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+11:01:49 INFO  : Result from executing command 'removePlatformRepo': 
+11:02:13 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+11:02:14 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:02:15 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+11:02:20 INFO  : Disconnected from the channel tcfchan#112.
+11:02:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:21 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:02:21 INFO  : 'jtag frequency' command is executed.
+11:02:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:02:22 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:02:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+11:02:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:02:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:22 INFO  : System reset is completed.
+11:02:25 INFO  : 'after 3000' command is executed.
+11:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:26 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:02:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:26 INFO  : 'con' command is executed.
+11:02:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:02:26 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:03:36 INFO  : Disconnected from the channel tcfchan#115.
+11:03:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:03:36 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:03:36 INFO  : 'jtag frequency' command is executed.
+11:03:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:03:37 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:03:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+11:03:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:03:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:37 INFO  : System reset is completed.
+11:03:40 INFO  : 'after 3000' command is executed.
+11:03:41 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:41 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:03:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:03:41 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:41 INFO  : 'con' command is executed.
+11:03:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:03:41 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:03:49 INFO  : Disconnected from the channel tcfchan#116.
+11:03:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:03:50 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:03:50 INFO  : 'jtag frequency' command is executed.
+11:03:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:03:51 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:03:51 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+11:03:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:03:51 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:51 INFO  : System reset is completed.
+11:03:54 INFO  : 'after 3000' command is executed.
+11:03:55 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:55 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:03:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:03:55 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:55 INFO  : 'con' command is executed.
+11:03:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:03:55 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:05:48 INFO  : Disconnected from the channel tcfchan#117.
+11:05:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:48 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:05:48 INFO  : 'jtag frequency' command is executed.
+11:05:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:05:50 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:05:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa'.
+11:05:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:05:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:50 INFO  : System reset is completed.
+11:05:53 INFO  : 'after 3000' command is executed.
+11:05:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:53 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:05:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/hdmi_text_controller_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:05:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:54 INFO  : 'con' command is executed.
+11:05:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:05:54 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:06:45 INFO  : Result from executing command 'removePlatformRepo': 
+11:08:38 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+11:08:51 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+11:09:16 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+11:09:16 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:09:18 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+11:09:21 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:09:21 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+11:09:21 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+11:09:21 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+11:09:24 INFO  : Disconnected from the channel tcfchan#118.
+11:09:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:25 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:09:25 INFO  : 'jtag frequency' command is executed.
+11:09:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:09:26 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:09:26 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/test.xsa'.
+11:09:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:09:26 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:26 INFO  : System reset is completed.
+11:09:29 INFO  : 'after 3000' command is executed.
+11:09:29 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:30 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:09:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/test.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:09:30 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:30 INFO  : 'con' command is executed.
+11:09:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:09:30 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'
+11:11:38 INFO  : Hardware specification for platform project 'hdmi_text_controller_wrapper' is updated.
+11:11:48 INFO  : Result from executing command 'removePlatformRepo': 
+11:12:13 INFO  : Result from executing command 'getProjects': hdmi_text_controller_wrapper
+11:12:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:12:15 INFO  : Checking for BSP changes to sync application flags for project 'text_controller'...
+11:12:19 INFO  : The hardware specification used by project 'text_controller' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:12:19 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.bit' stored in project is removed.
+11:12:19 INFO  : The file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream\hdmi_text_controller_top.mmi' stored in project is removed.
+11:12:19 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller\_ide\bitstream' in project 'text_controller'.
+11:12:21 INFO  : Disconnected from the channel tcfchan#122.
+11:12:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:21 INFO  : Jtag cable 'RealDigital Boo 8874042402C7A' is selected.
+11:12:21 INFO  : 'jtag frequency' command is executed.
+11:12:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+11:12:23 INFO  : Device configured successfully with "C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit"
+11:12:23 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/test2.xsa'.
+11:12:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:12:23 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:23 INFO  : System reset is completed.
+11:12:26 INFO  : 'after 3000' command is executed.
+11:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:27 INFO  : The application 'C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf' is downloaded to processor 'microblaze_0'.
+11:12:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874042402C7A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/_ide/bitstream/hdmi_text_controller_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/adamj/Desktop/Vitis/Lab6/workspace/hdmi_text_controller_wrapper/export/hdmi_text_controller_wrapper/hw/test2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/adamj/Desktop/Vitis/Lab6/workspace/text_controller/Debug/text_controller.elf
+----------------End of Script----------------
+
+11:12:27 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:27 INFO  : 'con' command is executed.
+11:12:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:12:27 INFO  : Launch script is exported to file 'C:\Users\adamj\Desktop\Vitis\Lab6\workspace\text_controller_system\_ide\scripts\systemdebugger_text_controller_system_standalone.tcl'

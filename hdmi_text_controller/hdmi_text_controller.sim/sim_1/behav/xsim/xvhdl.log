@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_microblaze_0_3/sim/hdmi_text_controller_microblaze_0_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_microblaze_0_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_dlmb_v10_3/sim/hdmi_text_controller_dlmb_v10_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_dlmb_v10_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_ilmb_v10_3/sim/hdmi_text_controller_ilmb_v10_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_ilmb_v10_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_dlmb_bram_if_cntlr_3/sim/hdmi_text_controller_dlmb_bram_if_cntlr_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_dlmb_bram_if_cntlr_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_ilmb_bram_if_cntlr_3/sim/hdmi_text_controller_ilmb_bram_if_cntlr_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_ilmb_bram_if_cntlr_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_microblaze_0_axi_intc_3/sim/hdmi_text_controller_microblaze_0_axi_intc_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_microblaze_0_axi_intc_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_mdm_1_3/sim/hdmi_text_controller_mdm_1_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_mdm_1_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_rst_clk_wiz_1_100M_3/sim/hdmi_text_controller_rst_clk_wiz_1_100M_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_rst_clk_wiz_1_100M_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_axi_uartlite_0_3/sim/hdmi_text_controller_axi_uartlite_0_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_text_controller_axi_uartlite_0_3'

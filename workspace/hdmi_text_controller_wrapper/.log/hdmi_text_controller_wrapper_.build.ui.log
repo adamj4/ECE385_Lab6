@@ -1,6 +1,6 @@
-2026-07-31T04:53:20.575884900255-04:53:20 **** Build of project hdmi_text_controller_wrapper ****
+2026-07-31T11:11:56.3452500255-11:11:56 **** Build of project hdmi_text_controller_wrapper ****
 000-buildplatform.bat 52753 hdmi_text_controller_wrapper  
-000-XSDB Server Channel: tcfchan#101
+000-XSDB Server Channel: tcfchan#124
 000-C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
@@ -262,5 +262,5 @@
 000-'Finished building libraries'
 000-
 00255-
-04:53:42 Build Finished (took 21s.556ms)
+11:12:15 Build Finished (took 19s.107ms)
 

@@ -278,14 +278,20 @@ module hdmi_text_controller_tb();
         //The C code on the MicroBlaze expects to be able to do byte and halfword (16-bit) writes, therefore if the
         //simulation works but the checksum does not pass in the hardware, check handling of write_strb. 
         for(i=0; i < 600; i++) begin 
-		  repeat (4) @(posedge aclk) axi_write(4*i, i);
+		  repeat (4) begin
+		      @(posedge aclk);
+		  end
+		  axi_write(4*i, i);
         end
         
         //The following is the readback routine. It tests that your AXI IP is capable of reading back all 601
         //VRAM registers via AXI (once you've properly filled in axi_read as above). Note that the verification
         //of the readback results is automatic, it will throw an assertion if the readback result is not as expected        
         for(i=0; i < 600; i++) begin 
-		  repeat (4) @(posedge aclk) axi_read(4*i, tb_read);
+		  repeat (4) begin
+		      @(posedge aclk);
+		  end
+		  axi_read(4*i, tb_read);
 		  //axi_read_assert:assert (tb_read == i) else $error ("AXI readback mismatch at address %x. Expected: %x. Actual:%x.", i, i, tb_read);
         end
         

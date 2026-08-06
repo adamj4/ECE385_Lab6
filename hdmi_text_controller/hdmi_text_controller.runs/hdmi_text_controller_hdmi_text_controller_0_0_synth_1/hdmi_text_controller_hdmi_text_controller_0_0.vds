@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Jul 31 09:08:15 2026
-# Process ID: 99792
+# Start of session at: Wed Aug  5 14:14:06 2026
+# Process ID: 51800
 # Current directory: C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1
 # Command line: vivado.exe -log hdmi_text_controller_hdmi_text_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_text_controller_hdmi_text_controller_0_0.tcl
 # Log file: C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1/hdmi_text_controller_hdmi_text_controller_0_0.vds
@@ -11,7 +11,7 @@
 # Running On: LAPTOP-SP4K5KFB, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 34000 MB
 #-----------------------------------------------------------
 source hdmi_text_controller_hdmi_text_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.105 ; gain = 116.398
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1003.129 ; gain = 117.719
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/RD_hdmi_ip2020'.
@@ -26,26 +26,26 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 46744
+INFO: [Synth 8-7075] Helper process launched with PID 63392
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-11121] redeclaration of ANSI port 'pixel_val' is not allowed [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/Color_Mapper.sv:36]
-WARNING: [Synth 8-10180] variable 'col' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/Color_Mapper.sv:42]
-WARNING: [Synth 8-10180] variable 'row' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/Color_Mapper.sv:43]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'pixel_val' is not allowed [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/Color_Mapper.sv:36]
+WARNING: [Synth 8-10180] variable 'col' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/Color_Mapper.sv:42]
+WARNING: [Synth 8-10180] variable 'row' must explicitly be declared as automatic or static [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/Color_Mapper.sv:43]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:145]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:146]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:147]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:148]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1818.219 ; gain = 407.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1817.195 ; gain = 405.949
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_hdmi_text_controller_0_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/synth/hdmi_text_controller_hdmi_text_controller_0_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/VGA_controller.sv:26]
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0.sv:100]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0.sv:100]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0.sv:100]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/synth/hdmi_tx_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
 INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/srldelay.v:70]
@@ -78,11 +78,11 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:69]
-INFO: [Synth 8-6157] synthesizing module 'color_mapper' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/Color_Mapper.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'font_rom' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/font_rom.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/font_rom.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/Color_Mapper.sv:16]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/a5cc/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/Color_Mapper.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/Color_Mapper.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ipshared/5767/src/hdmi_text_controller_v1_0.sv:10]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_hdmi_text_controller_0_0' (0#1) [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/synth/hdmi_text_controller_hdmi_text_controller_0_0.sv:53]
 WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.gen/sources_1/bd/hdmi_text_controller/ip/hdmi_text_controller_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:148]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
@@ -92,18 +92,18 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module hdmi_text_controller_v1_0
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.707 . Memory (MB): peak = 2769.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.919 . Memory (MB): peak = 2477.816 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -121,22 +121,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_text_controller_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2769.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2477.816 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.397 . Memory (MB): peak = 2769.188 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.710 . Memory (MB): peak = 2477.816 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -145,10 +145,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz/inst. (constraint fi
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -211,7 +211,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rres
 INFO: [Synth 8-3886] merging instance 'axi_bresp_reg[0]' (FDRE) to 'axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:01 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:03:33 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -232,8 +232,142 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:10 . Memory (MB): peak = 2769.188 ; gain = 1358.746
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:41 ; elapsed = 00:03:54 . Memory (MB): peak = 2477.816 ; gain = 1066.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:10:34 ; elapsed = 00:12:10 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:11:24 ; elapsed = 00:14:58 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:11:44 ; elapsed = 00:15:19 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:44 ; elapsed = 00:15:20 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:53 ; elapsed = 00:15:28 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:53 ; elapsed = 00:15:29 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:54 ; elapsed = 00:15:30 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:54 ; elapsed = 00:15:30 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_tx_0   | inst/encg/c0_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    11|
+|3     |LUT1       |     3|
+|4     |LUT2       |   155|
+|5     |LUT3       |  6419|
+|6     |LUT4       |    97|
+|7     |LUT5       |   611|
+|8     |LUT6       | 10057|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |  5834|
+|11    |MUXF8      |  2260|
+|12    |OSERDESE2  |     8|
+|14    |SRL16E     |    39|
+|15    |FDCE       |    68|
+|16    |FDRE       | 19529|
+|17    |FDSE       |     4|
+|18    |IBUF       |     1|
+|19    |OBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:54 ; elapsed = 00:15:30 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:09 ; elapsed = 00:15:16 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+Synthesis Optimization Complete : Time (s): cpu = 00:11:55 ; elapsed = 00:15:32 . Memory (MB): peak = 2477.816 ; gain = 1066.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.785 . Memory (MB): peak = 2477.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hdmi_text_controller_hdmi_text_controller_0_0' is not ideal for floorplanning, since the cellview 'hdmi_text_controller_v1_0_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2477.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9722c43b
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:12:15 ; elapsed = 00:16:19 . Memory (MB): peak = 2477.816 ; gain = 1441.891
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1/hdmi_text_controller_hdmi_text_controller_0_0.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2477.816 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hdmi_text_controller_hdmi_text_controller_0_0, cache-ID = 71cf43d114d773c4
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adamj/Desktop/Vitis/Lab6/hdmi_text_controller/hdmi_text_controller.runs/hdmi_text_controller_hdmi_text_controller_0_0_synth_1/hdmi_text_controller_hdmi_text_controller_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hdmi_text_controller_hdmi_text_controller_0_0_utilization_synth.rpt -pb hdmi_text_controller_hdmi_text_controller_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2477.816 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 14:31:15 2026...

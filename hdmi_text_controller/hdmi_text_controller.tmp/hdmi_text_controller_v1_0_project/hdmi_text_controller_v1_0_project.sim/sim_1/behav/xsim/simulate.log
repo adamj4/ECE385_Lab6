@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Info: Read back of control register: 036b0e94
+Time: 84360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial266_904  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv Line: 299
+$finish called at time : 84360 ns : File "c:/Users/adamj/Desktop/Vitis/Lab6/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" Line 308
